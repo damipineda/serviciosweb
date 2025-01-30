@@ -40,7 +40,9 @@ Copy code
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
-
+#nodiponible{
+    color: red;
+}
 .contenedor-navegacion {
     max-width: 1200px;
     margin: 0 auto;
@@ -879,6 +881,9 @@ Copy code
 @media (max-width: 768px) {
     .categorias-grid {
         grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
     }
 }
 
@@ -910,3 +915,12 @@ Copy code
         grid-template-columns: 1fr;
     }
 }
+
+@media(max-width: 768px){
+    .equipo-grid{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
