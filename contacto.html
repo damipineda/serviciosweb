@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiAsu - Contacto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="fondo-gris-claro">
+    <!--Menu-->
+        <nav class="navegacion">
+            <div class="contenedor-navegacion">
+                <a href="#" class="logo">ServiAsu</a>
+                <div class="boton-hamburguesa">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu">
+                    <a href="/index.html" class="menu-item">Inicio</a>
+                    <a href="/nosotros.html" class="menu-item">Nosotros</a>
+                    <a href="/contacto.html" class="menu-item">Contacto</a>
+                </div>
+                <div class="acciones">
+                    <button class="boton-iniciar-sesion">Iniciar Sesión</button>
+                    <button class="boton-registrarse">Registrarse</button>
+                </div>
+            </div>
+        </nav>
+    <header class="hero">
+        <div class="contenedor">
+            <h1 class="hero-titulo">Contacto</h1>
+            <p class="hero-subtitulo">Estamos aquí para ayudarte</p>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <section id="formulario-contacto">
+            <div class="grid md:grid-cols-2 gap-12">
+                <form id="formulario-contacto" class="formulario-contacto">
+                    <div class="campo-grupo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" class="campo-formulario" required>
+                    </div>
+                    <div class="campo-grupo">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="campo-formulario" required>
+                    </div>
+                    <div class="campo-grupo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" class="campo-formulario" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+                </form>
+
+                <div class="informacion-contacto">
+                    <div class="tarjeta-info">
+                        <h3 class="titulo-seccion">Información de contacto</h3>
+                        <ul>
+                            <li>📍 Asunción, Paraguay</li>
+                            <li>📱 +595 981 123 456</li>
+                            <li>📧 info@serviasu.com</li>
+                        </ul>
+                        <div class="mapa-contacto">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117917.88875564085!2d-57.66828213513137!3d-25.29642931244085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da59806b7e30d%3A0x2198d3d49876c6!2sAsunci%C3%B3n!5e0!3m2!1ses!2spy!4v1717983622769!5m2!1ses!2spy" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-columna">
+                <h4>ServiAsu</h4>
+                <p>Conectando profesionales confiables con quienes los necesitan.</p>
+            </div>
+            <div class="footer-columna">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/nosotros.html">Nosotros</a></li>
+                    <li><a href="/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-columna">
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="#">Plomería</a></li>
+                    <li><a href="#">Electricidad</a></li>
+                    <li><a href="#">Carpintería</a></li>
+                </ul>
+            </div>
+            <div class="footer-columna">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>📍 Asunción, Paraguay</li>
+                    <li>📱 +595 981 123 456</li>
+                    <li>📧 info@serviasu.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-inferior">
+            <p>&copy; 2024 ServiAsu. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="funciones.js"></script>
+</body>
+</html>
